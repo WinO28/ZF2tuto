@@ -14,3 +14,16 @@ CREATE TABLE album (
      VALUES  ('Lana  Del  Rey',  'Born  To  Die');
  INSERT INTO album (artist, title)
      VALUES  ('Gotye',  'Making  Mirrors');
+     
+     
+CREATE TABLE users (
+   id int(11) NOT NULL auto_increment,
+   user_name varchar(100) NOT NULL,
+   pass_word varchar(100) NOT NULL,
+   role varchar(100) NOT NULL,
+   PRIMARY KEY (id)
+ );
+ INSERT INTO users (user_name, pass_word, role)
+     VALUES  ('hugo', 'azerty123', 'admin');
+ INSERT INTO users (user_name, pass_word, role)
+     VALUES  ('hugo', 'azerty123', 'fan');
